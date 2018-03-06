@@ -6,23 +6,23 @@ location: Espacio Discoteque, Atlanta, GA
 cagematch: https://www.cagematch.net/?id=1&nr=184989
 
 photos:
-  - path: MLA13/IMG_4299.jpg
+  - src: IMG_4299.jpg
     caption: There was, like, a solid half hour of preshow bullshit, including, of course, a lucha clown
-  - path: MLA13/IMG_4301.jpg
+  - src: IMG_4301.jpg
     caption: As well as this dude, who sang like five songs?
-  - path: MLA13/IMG_4308.jpg
+  - src: IMG_4308.jpg
     caption: Jeff Cobb & Anthony Henry
-  - path: MLA13/IMG_4348.jpg
+  - src: IMG_4348.jpg
     caption: AR Fox cut a heel promo, standing on chairs directly in front of us
-  - path: MLA13/IMG_4321.jpg
+  - src: IMG_4321.jpg
     caption: Rey Horus & AR Fox
-  - path: MLA13/IMG_4323.jpg
+  - src: IMG_4323.jpg
     caption: Rey Horus & AR Fox
-  - path: MLA13/IMG_4331.jpg
+  - src: IMG_4331.jpg
     caption: Rush!
-  - path: MLA13/IMG_4337.jpg
+  - src: IMG_4337.jpg
     caption: Caristico!
-  - path: MLA13/IMG_4347.jpg
+  - src: IMG_4347.jpg
     caption: Me and my new best friend, Rush
 
 videos:

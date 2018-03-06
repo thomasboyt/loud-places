@@ -8,6 +8,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const categoryTemplate = path.resolve('./src/templates/category.js')
+
     resolve(
       graphql(
         `
@@ -17,6 +19,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   fields {
                     slug
+                    category
                   }
                   frontmatter {
                     title
@@ -49,6 +52,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           })
         })
+
+        // Category pages
+        const categories = new Set()
+        _.each(posts, (post, index) => {
+          categories.add(post.node.fields.category)
+        })
+
+        for (let category of categories) {
+          createPage({
+            path: `/${category}/`,
+            component: categoryTemplate,
+            context: {
+              category,
+            }
+          })
+        }
       })
     )
   })
@@ -58,11 +77,22 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+
+    // add slug to the markdown node
+    const slug = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
       node,
-      value,
+      name: 'slug',
+      value: slug,
+    })
+
+    // add category to the markdown node
+    const category = slug.slice(1, -1).split('/')[0]
+
+    createNodeField({
+      node,
+      name: 'category',
+      value: category,
     })
   }
 }

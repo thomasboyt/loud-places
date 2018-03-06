@@ -2,7 +2,7 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import PostList from '../components/PostList';
+import PostList from '../components/PostList'
 
 class BlogIndex extends React.Component {
   render() {

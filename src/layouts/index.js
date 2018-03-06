@@ -1,3 +1,6 @@
+import '../styles/normalize.css'
+import '../styles/loud-places.css'
+
 import React from 'react'
 import Link from 'gatsby-link'
 import capitalize from '../utils/capitalize'
@@ -30,7 +33,7 @@ class Template extends React.Component {
     )
 
     return (
-      <div className="container">
+      <div className="root">
         {header}
         {children()}
       </div>

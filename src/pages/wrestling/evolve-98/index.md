@@ -6,21 +6,21 @@ date: 2018-01-13
 cagematch: https://www.cagematch.net/?id=1&nr=191418
 
 photos:
-  - path: evolve-98/MVIMG_20180113_180604.jpg
+  - src: MVIMG_20180113_180604.jpg
     caption: JAREK, Jason Kincaid, Brody King, and Snoop Strikes (back) in the prelim match
-  - path: evolve-98/IMG_20180113_184736.jpg
+  - src: IMG_20180113_184736.jpg
     caption: Parrow goes up top for (presumedly) a splash on Chris Dickinson
-  - path: evolve-98/MVIMG_20180113_190902.jpg
+  - src: MVIMG_20180113_190902.jpg
     caption: AR Fox and friends celebrate his win over Matt Riddle, as he challenges for Keith Lee's WWN title
-  - path: evolve-98/MVIMG_20180113_191758.jpg
+  - src: MVIMG_20180113_191758.jpg
     caption: Fred Yehi gets Austin Theory up during their FIP title match
-  - path: evolve-98/IMG_20180113_193620.jpg
+  - src: IMG_20180113_193620.jpg
     caption: Keith Lee holds his title high, though Jaka isn't actually challenging for it in this non-title match
-  - path: evolve-98/MVIMG_20180113_195758.jpg
+  - src: MVIMG_20180113_195758.jpg
     caption: Darby Allin comes out first for his EVOLVE championship match against Zack Sabre Jr
-  - path: evolve-98/IMG_20180113_195930.jpg
+  - src: IMG_20180113_195930.jpg
     caption: Zack Sabre Jr came out to a huge face pop, though his work against Darby is as dirty as he gets
-  - path: evolve-98/MVIMG_20180113_195945.jpg
+  - src: MVIMG_20180113_195945.jpg
     caption: ZSJ and Darby Allin square off before their match
 
 videos:

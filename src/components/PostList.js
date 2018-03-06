@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Subhead from './Subhead';
-import { rhythm } from '../utils/typography'
 
 class Head extends React.Component {
   render() {
@@ -13,7 +12,7 @@ class Head extends React.Component {
 
     if (node.excerpt) {
       inner = (
-        <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+        <Link to={node.fields.slug}>
           {node.frontmatter.title}
         </Link>
       )
@@ -22,11 +21,7 @@ class Head extends React.Component {
     }
 
     return (
-      <h3
-        style={{
-          marginBottom: rhythm(1 / 4),
-        }}
-      >
+      <h3>
         {inner}
       </h3>
     )

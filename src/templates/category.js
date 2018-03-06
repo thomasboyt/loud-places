@@ -2,9 +2,8 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import PostList from '../components/PostList';
-
-const capitalize = (str) => str[0].toUpperCase() + str.slice(1)
+import PostList from '../components/PostList'
+import capitalize from '../utils/capitalize'
 
 export default class Category extends React.Component {
   render() {

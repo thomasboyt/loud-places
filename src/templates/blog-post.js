@@ -5,7 +5,6 @@ import get from 'lodash/get'
 
 import Subhead from '../components/Subhead';
 import Gallery from '../components/Gallery';
-import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -16,26 +15,17 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
+        <h2>
+          {post.frontmatter.title}
+        </h2>
+        <p>
           <Subhead frontmatter={post.frontmatter} />
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <Gallery photos={post.frontmatter.photos} />
 
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr />
 
         <ul
           style={{
@@ -74,7 +64,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

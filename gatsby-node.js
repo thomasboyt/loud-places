@@ -14,6 +14,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
           {
+            site {
+              siteMetadata {
+                navCategories
+              }
+            }
             allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
               edges {
                 node {
@@ -54,12 +59,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
 
         // Category pages
-        const categories = new Set()
-        _.each(posts, (post, index) => {
-          categories.add(post.node.fields.category)
-        })
-
-        for (let category of categories) {
+        for (let category of result.data.site.siteMetadata.navCategories) {
           createPage({
             path: `/${category}/`,
             component: categoryTemplate,

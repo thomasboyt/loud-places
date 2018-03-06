@@ -1,74 +1,52 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Container } from 'react-responsive-grid'
-
-import { rhythm, scale } from '../utils/typography'
+import capitalize from '../utils/capitalize'
 
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
-    let header
+    const { title, navCategories } = this.props.data.site.siteMetadata
 
-    let rootPath = `/`
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
-    }
+    const navItems = navCategories.map((category) => {
+      return (
+        <Link to={`/${category}`}>
+          {capitalize(category)}
+        </Link>
+      )
+    });
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Gatsby Starter Blog
+    const header = (
+      <header>
+        <h1>
+          <Link to={'/'}>
+            {title}
           </Link>
         </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Gatsby Starter Blog
-          </Link>
-        </h3>
-      )
-    }
+
+        <nav>
+          {navItems}
+        </nav>
+      </header>
+    )
+
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <div className="container">
         {header}
         {children()}
-      </Container>
+      </div>
     )
   }
 }
 
 export default Template
+
+export const pageQuery = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        navCategories
+      }
+    }
+  }
+`

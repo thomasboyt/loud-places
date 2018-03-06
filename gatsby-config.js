@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Loud Places',
+    navCategories: ['wrestling']
   },
   plugins: [
     {
@@ -36,12 +37,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
+    `gatsby-plugin-react-helmet`
   ],
 }

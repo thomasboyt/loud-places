@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class Subhead extends React.Component {
   render() {
-    const {frontmatter} = this.props
+    const { frontmatter } = this.props
 
     const items = [frontmatter.date]
 
@@ -20,7 +20,12 @@ export default class Subhead extends React.Component {
           if (idx === items.length - 1) {
             return <span key={idx}>{item}</span>
           } else {
-            return <span key={idx}>{item}{' · '}</span>
+            return (
+              <span key={idx}>
+                {item}
+                {' · '}
+              </span>
+            )
           }
         })}
       </span>
@@ -36,4 +41,4 @@ export const markdownFrontmatterFragment = graphql`
       cagematch
     }
   }
-`;
+`

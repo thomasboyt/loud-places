@@ -29,8 +29,8 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {fields: [frontmatter___date], order: DESC },
-      filter: { fields: {category: {eq: $category}} }
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { category: { eq: $category } } }
     ) {
       ...PostListMarkdownRemarkConnection
     }

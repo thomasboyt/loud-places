@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Subhead from '../components/Subhead';
-import Gallery from '../components/Gallery';
+import Subhead from '../components/Subhead'
+import Gallery from '../components/Gallery'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -15,9 +15,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h2>
-          {post.frontmatter.title}
-        </h2>
+        <h2>{post.frontmatter.title}</h2>
         <p>
           <Subhead frontmatter={post.frontmatter} />
         </p>

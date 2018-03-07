@@ -1,0 +1,1 @@
+gatsby build && rsync -avz --delete public/ thomas@disco.zone:~/shows

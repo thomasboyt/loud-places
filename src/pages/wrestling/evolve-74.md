@@ -5,10 +5,6 @@ location: La Boom, Queens, NY
 date: 2016-12-10
 cagematch: https://www.cagematch.net/?id=1&nr=164983
 
-photos:
-
-videos:
-
 tweets:
   - https://twitter.com/thomasABoyt/status/807721357509296128
   - https://twitter.com/thomasABoyt/status/807723045171372032

@@ -5,10 +5,6 @@ location: The Theater at MSG, New York City, NY
 date: 2016-11-16
 cagematch: https://www.cagematch.net/?id=1&nr=164496
 
-photos:
-
-videos:
-
 tweets:
   - https://twitter.com/thomasABoyt/status/799007754887327746
   - https://twitter.com/thomasABoyt/status/799049175035953153

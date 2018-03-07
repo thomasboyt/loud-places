@@ -5,10 +5,6 @@ location: Barclays Center, Brooklyn, NY
 date: 2015-08-22
 cagematch: https://www.cagematch.net/?id=1&nr=137913
 
-photos:
-
-videos:
-
 tweets:
   - https://twitter.com/thomasABoyt/status/635223798070026240
   - https://twitter.com/thomasABoyt/status/635224319543611393

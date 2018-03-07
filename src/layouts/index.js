@@ -12,30 +12,48 @@ class Template extends React.Component {
 
     const navItems = navCategories.map((category) => {
       return (
-        <Link to={`/${category}`}>
-          {capitalize(category)}
-        </Link>
+        <li key={category}>
+          <Link to={`/${category}`}>
+            {capitalize(category)}
+          </Link>
+        </li>
       )
     });
 
     const header = (
       <header>
-        <h1>
-          <Link to={'/'}>
-            {title}
-          </Link>
-        </h1>
+        <div className="header-inner">
+          <h1>
+            <Link to={'/'}>
+              {title}
+            </Link>
+          </h1>
 
-        <nav>
-          {navItems}
-        </nav>
+          <p>
+            This is a website where I write about places I go.
+          </p>
+
+          <nav>
+            See:
+            {' '}
+            <ul>
+              {navItems}
+            </ul>
+          </nav>
+        </div>
       </header>
     )
 
     return (
       <div className="root">
-        {header}
-        {children()}
+        <div className="head-nav">
+          {header}
+        </div>
+        <div className="right-pane">
+          <div className="content">
+            {children()}
+          </div>
+        </div>
       </div>
     )
   }

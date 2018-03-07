@@ -33,14 +33,12 @@ export default class PostList extends React.Component {
     const {posts} = this.props;
 
     return (
-      <div>
+      <div className="post-list">
         {posts.map(({ node }) => {
           return (
-            <div key={node.fields.slug}>
+            <div key={node.fields.slug} className="post-list-item">
               <Head node={node} />
-              <small>
-                <Subhead frontmatter={node.frontmatter} />
-              </small>
+              <Subhead frontmatter={node.frontmatter} />
             </div>
           )
         })}

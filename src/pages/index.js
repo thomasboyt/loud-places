@@ -12,6 +12,7 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
+
         <PostList posts={posts} />
       </div>
     )

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Loud Places',
-    navCategories: ['shows', 'wrestling']
+    navCategories: ['shows', 'wrestling', 'travel']
   },
   plugins: [
     {

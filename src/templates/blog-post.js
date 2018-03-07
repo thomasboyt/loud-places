@@ -24,34 +24,6 @@ class BlogPostTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <Gallery photos={post.frontmatter.photos} />
-
-        <hr />
-
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          {previous && (
-            <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </li>
-          )}
-
-          {next && (
-            <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </li>
-          )}
-        </ul>
       </div>
     )
   }

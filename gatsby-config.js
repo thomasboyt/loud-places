@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Loud Places',
     description: 'This is a website where I write about places I go.',
-    siteUrl: 'https://loudplaces.disco.zone',
+    siteUrl: 'http://loudplaces.disco.zone',
     navCategories: ['shows', 'wrestling']
   },
   plugins: [

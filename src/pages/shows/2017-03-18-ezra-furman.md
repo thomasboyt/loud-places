@@ -1,5 +1,5 @@
 ---
 title: Ezra Furman
-location: Music Hall of Williamsburg
+location: Rough Trade NYC
 date: 2017-03-18
 ---

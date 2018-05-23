@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <Gallery photos={post.frontmatter.photos} />
+        <Gallery photos={post.frontmatter.photos} videos={post.frontmatter.videos} />
       </div>
     )
   }
@@ -40,7 +40,7 @@ export const pageQuery = graphql`
       id
       html
       ...SubheadFrontmatter
-      ...PhotosFrontmatter
+      ...GalleryFrontmatter
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

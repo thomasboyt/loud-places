@@ -18,6 +18,10 @@ a, a:visited, a:hover, a:active {
   border-bottom: 1px #000 solid;
 }
 
+a.gatsby-resp-image-link {
+  border: none;
+}
+
 a:hover, a:active {
   border-bottom: 0;
   font-weight: bold;

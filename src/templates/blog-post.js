@@ -22,6 +22,14 @@ class BlogPostTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <Gallery photos={post.frontmatter.photos} videos={post.frontmatter.videos} />
+
+          {next && (
+            <p>
+              <Link to={next.fields.slug} rel="next">
+                Next: {next.frontmatter.title} →
+              </Link>
+            </p>
+          )}
       </div>
     )
   }

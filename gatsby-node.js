@@ -2,6 +2,9 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const isBefore = require('date-fns/is_before');
+const isAfter = require('date-fns/is_after');
+const closestIndexTo = require('date-fns/closest_index_to');
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -28,6 +31,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   }
                   frontmatter {
                     title
+                    series
+                    date
                   }
                 }
               }
@@ -41,14 +46,36 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges.map((edge) => edge.node);
+
+        const getDate = (post) => new Date(post.frontmatter.date);
+        const getSeries = (post) => post.frontmatter.series;
+
+        const postsBySeries = _.chain(posts).filter(getSeries).groupBy('frontmatter.series').value();
 
         _.each(posts, (post) => {
+          const series = getSeries(post);
+
+          let next, previous;
+          if (series) {
+            const postsForSeries = postsBySeries[series];
+            const otherPosts = postsForSeries.filter((seriesPost) => post !== seriesPost);
+
+            const postDate = getDate(post);
+            const afterPosts = otherPosts.filter((otherPost) => isAfter(getDate(otherPost), postDate));
+            const beforePosts = otherPosts.filter((otherPost) => isBefore(getDate(otherPost), postDate));
+
+            next = afterPosts[closestIndexTo(postDate, afterPosts.map(getDate))];
+            previous = beforePosts[closestIndexTo(postDate, beforePosts.map(getDate))];
+          }
+
           createPage({
-            path: post.node.fields.slug,
+            path: post.fields.slug,
             component: blogPost,
             context: {
-              slug: post.node.fields.slug,
+              slug: post.fields.slug,
+              next,
+              previous
             },
           })
         })

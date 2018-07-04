@@ -1,5 +1,5 @@
 ---
-title: "Dublin, Ireland"
+title: "Dublin"
 series: "Europe Trip 2018"
 date: 2018-03-28
 end_date: 2018-04-02

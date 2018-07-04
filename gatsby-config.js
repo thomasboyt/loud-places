@@ -3,7 +3,7 @@ module.exports = {
     title: 'Loud Places',
     description: 'This is a website where I write about places I go.',
     siteUrl: 'http://loudplaces.disco.zone',
-    navCategories: ['shows', 'wrestling']
+    navCategories: ['shows', 'wrestling', 'travel']
   },
   plugins: [
     {

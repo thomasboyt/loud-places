@@ -30,7 +30,7 @@ There were lots of other places I could have potentially gone to, but with a tri
 
 I had the trip pretty much entirely locked in by the beginning of February. Once I had my hostels, Airbnbs, trains, and planes booked, I kinda just sat back and relaxed. In retrospect, I wish I had done more planning - especially on the later parts of my trip, where I just could not be bothered to research what to do half the time. In particular, I kinda wish I'd just watched some Youtube videos about the places I was going, or at least looked up a few nice-looking cafes. Things worked out, but not _all_ cities are amenable to planning-on-the-fly, especially as a solo traveler.
 
-I bought a few things for this trip - a day pack, a packable towel, and this Osprey backpack, which I carried all my stuff in. It's basically the largest bag you can bring carry-on on European budget airlines. It fit:
+I bought a few things for this trip - a day pack, a packable towel, and [this Osprey backpack](https://www.rei.com/product/894562/osprey-farpoint-40-travel-pack), which I carried all my stuff in. It's basically the largest bag you can bring carry-on on European budget airlines. It fit:
 
 * Six days worth of t-shirts and underwear
 * Two pairs of sweatpants

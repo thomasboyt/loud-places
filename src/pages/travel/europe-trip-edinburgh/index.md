@@ -159,4 +159,66 @@ Back at the hostel, I just hung out there for the rest of the night, eating my k
 
 ### April 4
 
+For the third day in a row, my plans to do a free walking tour of the city were scuttled by rainy, cold weather. I got my third full breakfast of the trip as a consolation prize, from the same nearby pub where I had gotten fish and chips. It was a solid fry-up, and included haggis as a fun bonus.
+
+![](full-breakfast.jpg)
+
+With no real desires other than to spend the day indoors, I braved the weather long enough to walk to the nearby National Museum of Scotland. On the way, I passed the statue of [Greyfriars Bobby](https://en.wikipedia.org/wiki/Greyfriars_Bobby) one of the most famous good dogs in the world.
+
+![](greyfriars-bobby.jpg)
+
+The National Museum of Scotland ended up being one of my favorite museums of the entire trip. The museum is a merger of two adjacent museums, with very different characters. The former Royal Museum dates from the 1850s and focuses mainly on science, world cultures (re: stuff stolen from other places), and natural history. After emerging from the basement entrance, I found myself in the crowded and loud main atrium.
+
+![](museum-atrium.jpg)
+
+The atrium was full of temporary exhibits for the city's science festival, starting that week. The most interesting of these was a huge balloon sculpture, apparently representing an event horizon, though I'm not exactly sure how. It was still under construction when I was there, so they were filling out the bottom rungs of the sculpture, and occasionally a loud *pop* would echo across the atrium when someone over-inflated a balloon.
+
+![](museum-balloons.jpg)
+
+Given that there are science and natural history museums just about everywhere in Europe, I decided to skip past a lot of the exhibits and beeline towards the newer half of the museum, formerly just called the Museum of Scotland, which focuses on Scottish history and antiquities. I'd really loved the archelogical museum in Dublin for focusing on Irish history, and figured I'd find this interesting for the same reason.
+
+On the way, I walked through another atrium devoted to science. I stopped at a few displays and that caught my eye, including some F1 cars, planes, and, uh, the taxidermied Dolly the sheep.
+
+![](museum-f1.jpg)
+
+![](museum-planes.jpg)
+
+![](museum-dolly.jpg)
+
+I finally made it to the Scottish history wing, where I remained for the next couple hours, tracing from pre-history through the Acts of Union. I *loved* this. I don't have a ton of pictures, because, well, my favorite parts were probably the detailed explanatory texts that walked me through the history of Scotland. The artifacts on display ranged from piles of millenia-old iron trinkets, to bibles printed during the Reformation, to famous arms and armor.
+
+![](museum-artifacts.jpg)
+
+![](museum-harp.jpg)
+
+![](museum-lewis-chesspieces.jpg)
+
+![](museum-sword.jpg)
+
+Eventually, my hunger overpowered my attention spawn, and I opted to skip the last 300 years or so of Scottish history in favor of finding lunch. I went to a tiny pub, the [Halfway House](https://www.tripadvisor.com/Restaurant_Review-g186525-d1516350-Reviews-The_Halfway_House-Edinburgh_Scotland.html), hidden halfway down a long staircase leading up from The Mound.
+
+The pub was more or less the only time in my entire trip that any locals interacted with me on their own accord, with several older dudes at the bar who seemed genuinely happy to talk to tourists. I ended up sitting drinking for a _while_ after I'd finished my beef stew, listening to an older man go on and on about every band that came on the generic-classic-rock radio. The highlight of this was a story about how he had gone to seen Bowie in the 80s, and spent the whole time wishing he'd gone to see _Big Country_ play that night instead, which... I love Bowie, but also could understand his 80s shows being a bit underwhelming if you don't love [giant glass spiders](https://en.wikipedia.org/wiki/Glass_Spider_Tour). Also, hey, In A Big Country rules, so can't fault him too much.
+
+![](beef-stew.jpg)
+
+After he stumbled out of the pub, yelling behind him that I should try listening to The Faces (which I did!), I decided to head back to the hostel myself. Several pints and two scotches later I was _quite_ tipsy for 3pm, and was displeased to discover it had started _snowing_ while I had been sitting inside. I slipped and slid my way uphill back to my hostel - no easy feat, given the shoes I was wearing - but made it back and immediately took a nap.
+
+![](castle-snow.jpg)
+
+Re-energized, I headed back out with folks from the hostel to a hostel-organized "dance night," which turned out to be traditional dancing at a local rock club. I didn't partake, because I am historically godawful at any sort of dance requiring _choregraphy_, and didn't want to step on anyone else's feet (or bonk our heads together). Still, it was fun to watch.
+
+![](folk-band.jpg)
+
+<iframe src="https://drive.google.com/file/d/1QeC-6NBGyd2_jzWuZZjzf6n_qG-PI1z_pQ/preview" width="640" height="480"></iframe>
+
+I ended up hanging out with a few folks from the hostel, one of whom had been a university student here, so we all followed her to a nearby pub that was packed that night. The pub had a duo playing live music, all just pop covers in a vaguely folk-ish style. I could have done without having to hear Hey There Delilah ever again in my life, but their version was at least tolerable.
+
+![](pub-band.jpg)
+
+Then I headed back to the hostel for a decent night's sleep, before my long train trip to London the next day.
+
 ### April 5
+
+Of course my last day in Edinburgh was the first day with a beautiful blue sky, but I already knew I wanted to come back here anyways. I headed down to the train station (located down in the same valley as Princes Street Gardens), where I picked up my ticket, ate a quick breakfast, and hopped on the train.
+
+![](train-ticket.jpg)

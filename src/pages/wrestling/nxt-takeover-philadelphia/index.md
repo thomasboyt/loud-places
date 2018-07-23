@@ -3,7 +3,10 @@ title: "NXT TakeOver Philadelphia"
 
 date: 2018-01-27 19:15:00
 location: Wells Fargo Center, Philadelphia, PA
-cagematch: https://www.cagematch.net/?id=1&nr=178578&page=2
+
+cagematch_list:
+  - https://www.cagematch.net/?id=1&nr=178578&page=2
+  - https://www.cagematch.net/?id=1&nr=192330
 
 photos:
   - src: wells-fargo-center.jpg

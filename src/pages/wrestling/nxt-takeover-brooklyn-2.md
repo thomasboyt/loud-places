@@ -3,7 +3,10 @@ title: NXT TakeOver Brooklyn II
 
 location: Barclays Center, Brooklyn, NY
 date: 2016-08-20
-cagematch: https://www.cagematch.net/?id=1&nr=137913
+
+cagematch_list:
+  - https://www.cagematch.net/?id=1&nr=137913
+  - https://www.cagematch.net/?id=1&nr=159822
 
 tweets:
   - https://twitter.com/thomasABoyt/status/767124241313652736

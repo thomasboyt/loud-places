@@ -1,6 +1,23 @@
 import React from 'react'
 
 export default class Subhead extends React.Component {
+  getCagematch(frontmatter) {
+    if (frontmatter.cagematch) {
+      return <a href={frontmatter.cagematch}>Card</a>;
+    }
+
+    if (frontmatter.cagematch_list) {
+      const cards = frontmatter.cagematch_list.map((cardLink, i) => (
+        <span>
+          <a href={cardLink} key={cardLink}>[{i + 1}]</a>{' '}
+        </span>
+      ))
+      return <span>Cards: {cards}</span>;
+    }
+
+    return null;
+  }
+
   render() {
     const { frontmatter } = this.props
 
@@ -16,8 +33,10 @@ export default class Subhead extends React.Component {
       items.push(frontmatter.location)
     }
 
-    if (frontmatter.cagematch) {
-      items.push(<a href={frontmatter.cagematch}>Card</a>)
+    // class just for scraping purposes
+    const cagematch = this.getCagematch(frontmatter);
+    if (cagematch) {
+      items.push(<span className="cagematch">{cagematch}</span>)
     }
 
     return (
@@ -46,6 +65,7 @@ export const markdownFrontmatterFragment = graphql`
       end_date(formatString: "MMMM DD, YYYY")
       location
       cagematch
+      cagematch_list
     }
   }
 `

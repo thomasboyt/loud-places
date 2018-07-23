@@ -3,7 +3,10 @@ title: NXT TakeOver Brooklyn
 
 location: Barclays Center, Brooklyn, NY
 date: 2015-08-22
-cagematch: https://www.cagematch.net/?id=1&nr=137913
+
+cagematch_list:
+  - https://www.cagematch.net/?id=1&nr=133103
+  - https://www.cagematch.net/?id=1&nr=136031
 
 tweets:
   - https://twitter.com/thomasABoyt/status/635223798070026240

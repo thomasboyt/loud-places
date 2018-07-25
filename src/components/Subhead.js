@@ -8,7 +8,7 @@ export default class Subhead extends React.Component {
 
     if (frontmatter.cagematch_list) {
       const cards = frontmatter.cagematch_list.map((cardLink, i) => (
-        <span>
+        <span key={cardLink}>
           <a href={cardLink} key={cardLink}>[{i + 1}]</a>{' '}
         </span>
       ))

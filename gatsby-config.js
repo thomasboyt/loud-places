@@ -3,7 +3,7 @@ module.exports = {
     title: 'Loud Places',
     description: 'This is a website where I write about places I go.',
     siteUrl: 'http://loudplaces.disco.zone',
-    navCategories: ['shows', 'wrestling', 'travel']
+    navCategories: ['shows', 'wrestling', 'travel'],
   },
   plugins: [
     {
@@ -38,7 +38,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
   ],
 }

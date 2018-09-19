@@ -41,7 +41,7 @@ The rest of the night was spent out drinking with some local friends, from which
 
 ### April 6
 
-I did laundry the next morning, which may seem like a detail to minor to mention here, but it was the first of many laundry machines in Europe with way too many settings with zero documentation about how they differed:
+I did laundry the next morning, which may seem like a detail too minor to mention here, but it was the first of many laundry machines in Europe with way too many settings with zero documentation about how they differed:
 
 ![](laundry.jpg)
 
@@ -65,11 +65,11 @@ I saw the [controversial Elgin Marbles](https://en.wikipedia.org/wiki/Elgin_Marb
 
 ![](british-museum-elgin.jpg)
 
-Afterwards, I headed over to Trafalgar Square, siet of another museum I'd missed last time, the National Gallery.
+Afterwards, I headed over to Trafalgar Square, site of another museum I'd missed last time, the National Gallery.
 
 ![](trafalgar-square.jpg)
 
-Unfortunately, I didn't get many photos of the museum. Like a lot of galleries, many sections warned discouraged photography. For whatever reason, I wound up with a lot of shots of dogs in portraiture, probably because they were more interesting than the actual human subjects.
+Unfortunately, I didn't get many photos of the museum. Like a lot of galleries, many sections discouraged photography. For whatever reason, I wound up with a lot of shots of dogs in portraiture, probably because they were more interesting than the actual human subjects.
 
 ![](national-gallery.jpg)
 
@@ -101,13 +101,11 @@ After all that, I decided to walk along the north bank of the Thames, with a vag
 
 ![](jazz-art-2.jpg)
 
-I walked over the Millenium Bridge to the Tate Modern, and sat in the courtyard drinking a pint from a little outdoor craft bar before continuing. It was an overcast day, but a pleasant one.
+I walked over the Millenium Bridge to the Tate Modern, and sat in the courtyard drinking a pint from a little outdoor craft bar before continuing. It was an overcast day, but a pleasant one. I drank [this weird beer](https://untappd.com/b/the-wild-beer-co-yokai/2365381) that included seaweed and pepper, but I really liked it!
 
 ![](millenium-bridge.jpg)
 
 The museum was hosting a couple paid exhibitions - [one on Picasso](https://www.tate.org.uk/whats-on/tate-modern/exhibition/ey-exhibition-picasso-1932-love-fame-tragedy), and one by [Joan Jonas](https://www.tate.org.uk/whats-on/tate-modern/exhibition/joan-jonas). I was feeling cheap, and mostly interested in the free permanent collection, so I didn't see either, but I did see a free offshoot of the Joan Jonas exhibit. The Tate Modern, being a former power station, has some weird spaces, and this installation was in the "Tanks" in the basement of one building.
-
-![](joan-jonas-0.jpg)
 
 ![](joan-jonas-1.jpg)
 
@@ -179,9 +177,9 @@ After my visit to the Conservatory, I watched a little more wrestling, then wand
 
 ![](barbican-photography.jpg)
 
-The exhibit contained different rooms devoted to certain photographers and subjects. It's hard to describe the exhibit beyond, well, what you already know from the title. It contained photography of everything from Japanese punk scenes, to mentally ill people without homes in LA, to transgender sex workers in south America. I usually don't find photography exhibits appealing, but this was so capitivating that I must have spent two hours or more in there.
+The exhibit was divided into rooms devoted to different photographers and subjects. It's hard to describe the exhibit beyond, well, what you already know from the title. It contained photography of everything from Japanese punk scenes, to mentally ill people without homes in LA, to transgender sex workers in south America. I usually don't find photography exhibits appealing, but this was so capitivating that I must have spent two hours or more in there.
 
-Afterwards, I watched a little more wrestling, then headed out to meet up with friends for more drinking.
+Afterwards, I watched a little more wrestling, then headed out to meet up with friends for more drinking. One funny detail, though, is that afterwards, the train broke down while I was on my way back to the hostel, which made me somewhat homesick. I took an Uber home - first time I'd taken a car (excepting busses, of course) on this trip - and got a nice view of the Tower of London at night as we went over the Tower Bridge, though my photos are unfortunately too blurry to bother including here.
 
 ### April 9
 

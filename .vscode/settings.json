@@ -1,8 +1,0 @@
-{
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "eslint.validate": ["javascript", "javascriptreact"],
-  "files.trimTrailingWhitespace": false,
-  "editor.wordWrapColumn": 80
-}

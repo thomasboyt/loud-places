@@ -75,7 +75,7 @@ Finally, I got crammed into an elevator along with a bunch of other folks for th
 
 The top opened into an enclosed platform, but I quickly went upstairs to the exposed viewing area, surrounded by, uh, a thick chain link fence, presumedly to deter further [would-be parachuters](https://en.wikipedia.org/wiki/Franz_Reichelt). Still, I tried to take some good photos through the fence:
 
-![](eiffel-top-1.jpg)
+![](eiffel-top.jpg)
 
 ![](eiffel-top-2.jpg)
 

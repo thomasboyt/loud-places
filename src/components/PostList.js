@@ -7,10 +7,11 @@ import Subhead from './Subhead';
 class Head extends React.Component {
   render() {
     const { node } = this.props;
+    const hasPhotos = get(node, ['frontmatter', 'photos', 'length']) > 0;
 
     let inner;
 
-    if (node.excerpt) {
+    if (node.excerpt || hasPhotos) {
       inner = <Link to={node.fields.slug}>{node.frontmatter.title}</Link>;
     } else {
       inner = node.frontmatter.title;
@@ -51,6 +52,9 @@ export const markdownRemarkFragment = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          photos {
+            caption
+          }
         }
       }
     }

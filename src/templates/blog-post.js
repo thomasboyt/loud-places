@@ -1,60 +1,60 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
 
-import Subhead from '../components/Subhead'
-import Gallery from '../components/Gallery'
+import Subhead from '../components/Subhead';
+import Gallery from '../components/Gallery';
 
 class BlogPostTemplate extends React.Component {
   // https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
   componentDidMount() {
     if (typeof IntersectionObserver === 'undefined') {
-      return
+      return;
     }
 
-    const el = this.markdownContainer
+    const el = this.markdownContainer;
 
-    const images = el.querySelectorAll('img')
+    const images = el.querySelectorAll('img');
 
     for (let image of images) {
-      image.dataset.src = image.src
-      image.dataset.srcset = image.srcset
-      image.removeAttribute('src')
-      image.removeAttribute('srcset')
-      image.style.visibility = 'hidden'
+      image.dataset.src = image.src;
+      image.dataset.srcset = image.srcset;
+      image.removeAttribute('src');
+      image.removeAttribute('srcset');
+      image.style.visibility = 'hidden';
     }
 
     this.io = new window.IntersectionObserver(
       (entries) => {
         for (let entry of entries) {
           if (entry.isIntersecting) {
-            const image = entry.target
-            image.src = image.dataset.src
-            image.srcset = image.dataset.srcset
-            image.style.visibility = 'visible'
-            this.io.unobserve(image)
+            const image = entry.target;
+            image.src = image.dataset.src;
+            image.srcset = image.dataset.srcset;
+            image.style.visibility = 'visible';
+            this.io.unobserve(image);
           }
         }
       },
       { rootMargin: '200px' }
-    )
+    );
 
     for (let image of images) {
-      this.io.observe(image)
+      this.io.observe(image);
     }
   }
 
   componentWillUnmount() {
     if (this.io) {
-      this.io.disconnect()
+      this.io.disconnect();
     }
   }
 
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const { previous, next } = this.props.pathContext
+    const post = this.props.data.markdownRemark;
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+    const { previous, next } = this.props.pathContext;
 
     return (
       <div>
@@ -66,7 +66,7 @@ class BlogPostTemplate extends React.Component {
 
         <div
           ref={(el) => {
-            this.markdownContainer = el
+            this.markdownContainer = el;
           }}
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
@@ -84,11 +84,11 @@ class BlogPostTemplate extends React.Component {
           </p>
         )}
       </div>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -108,4 +108,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

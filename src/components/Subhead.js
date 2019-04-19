@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default class Subhead extends React.Component {
   getCagematch(frontmatter) {
@@ -9,9 +9,11 @@ export default class Subhead extends React.Component {
     if (frontmatter.cagematch_list) {
       const cards = frontmatter.cagematch_list.map((cardLink, i) => (
         <span key={cardLink}>
-          <a href={cardLink} key={cardLink}>[{i + 1}]</a>{' '}
+          <a href={cardLink} key={cardLink}>
+            [{i + 1}]
+          </a>{' '}
         </span>
-      ))
+      ));
       return <span>Cards: {cards}</span>;
     }
 
@@ -19,42 +21,42 @@ export default class Subhead extends React.Component {
   }
 
   render() {
-    const { frontmatter } = this.props
+    const { frontmatter } = this.props;
 
     const items = [];
 
     if (frontmatter.end_date) {
-      items.push(`${frontmatter.date} - ${frontmatter.end_date}`)
+      items.push(`${frontmatter.date} - ${frontmatter.end_date}`);
     } else {
-      items.push(frontmatter.date)
+      items.push(frontmatter.date);
     }
 
     if (frontmatter.location) {
-      items.push(frontmatter.location)
+      items.push(frontmatter.location);
     }
 
     // class just for scraping purposes
     const cagematch = this.getCagematch(frontmatter);
     if (cagematch) {
-      items.push(<span className="cagematch">{cagematch}</span>)
+      items.push(<span className="cagematch">{cagematch}</span>);
     }
 
     return (
       <span>
         {items.map((item, idx) => {
           if (idx === items.length - 1) {
-            return <span key={idx}>{item}</span>
+            return <span key={idx}>{item}</span>;
           } else {
             return (
               <span key={idx}>
                 {item}
                 {' · '}
               </span>
-            )
+            );
           }
         })}
       </span>
-    )
+    );
   }
 }
 
@@ -68,4 +70,4 @@ export const markdownFrontmatterFragment = graphql`
       cagematch_list
     }
   }
-`
+`;

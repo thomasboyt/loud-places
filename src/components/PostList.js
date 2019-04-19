@@ -1,28 +1,28 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
+import React from 'react';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
 
-import Subhead from './Subhead'
+import Subhead from './Subhead';
 
 class Head extends React.Component {
   render() {
-    const { node } = this.props
+    const { node } = this.props;
 
-    let inner
+    let inner;
 
     if (node.excerpt) {
-      inner = <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+      inner = <Link to={node.fields.slug}>{node.frontmatter.title}</Link>;
     } else {
-      inner = node.frontmatter.title
+      inner = node.frontmatter.title;
     }
 
-    return <h3>{inner}</h3>
+    return <h3>{inner}</h3>;
   }
 }
 
 export default class PostList extends React.Component {
   render() {
-    const { posts } = this.props
+    const { posts } = this.props;
 
     return (
       <div className="post-list">
@@ -32,10 +32,10 @@ export default class PostList extends React.Component {
               <Head node={node} />
               <Subhead frontmatter={node.frontmatter} />
             </div>
-          )
+          );
         })}
       </div>
-    )
+    );
   }
 }
 
@@ -55,4 +55,4 @@ export const markdownRemarkFragment = graphql`
       }
     }
   }
-`
+`;

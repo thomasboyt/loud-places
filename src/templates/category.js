@@ -1,15 +1,15 @@
-import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import React from 'react';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
 
-import PostList from '../components/PostList'
-import capitalize from '../utils/capitalize'
+import PostList from '../components/PostList';
+import capitalize from '../utils/capitalize';
 
 export default class Category extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const category = capitalize(get(this, 'props.pathContext.category'))
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const category = capitalize(get(this, 'props.pathContext.category'));
 
     return (
       <div>
@@ -17,7 +17,7 @@ export default class Category extends React.Component {
         <h1>{category}</h1>
         <PostList posts={posts} />
       </div>
-    )
+    );
   }
 }
 
@@ -35,4 +35,4 @@ export const pageQuery = graphql`
       ...PostListMarkdownRemarkConnection
     }
   }
-`
+`;

@@ -1,19 +1,19 @@
-import React from 'react'
-import '../styles/flexbin.css'
+import React from 'react';
+import '../styles/flexbin.css';
 
-const Photos = ({photos}) => {
+const Photos = ({ photos }) => {
   if (!photos) {
-    return null
+    return null;
   }
 
   const photoJsx = photos.map((photo) => {
-    const src = photo.src.childImageSharp.sizes.src
+    const src = photo.src.childImageSharp.sizes.src;
     return (
       <a href={src} key={src}>
         <img src={src} />
       </a>
-    )
-  })
+    );
+  });
 
   return (
     <div>
@@ -23,9 +23,9 @@ const Photos = ({photos}) => {
   );
 };
 
-const Videos = ({videos}) => {
+const Videos = ({ videos }) => {
   if (!videos) {
-    return null
+    return null;
   }
 
   const videoJsx = videos.map((video) => {
@@ -36,10 +36,13 @@ const Videos = ({videos}) => {
           allowFullScreen
           className="google-video"
           src={`https://drive.google.com/file/d/${src}/preview`}
-          width="560" height="315" key={src} />
+          width="560"
+          height="315"
+          key={src}
+        />
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <div>
@@ -56,7 +59,7 @@ export default class Gallery extends React.Component {
         <Photos photos={this.props.photos} />
         <Videos videos={this.props.videos} />
       </div>
-    )
+    );
   }
 }
 
@@ -76,4 +79,4 @@ export const markdownFrontmatterFragment = graphql`
       }
     }
   }
-`
+`;

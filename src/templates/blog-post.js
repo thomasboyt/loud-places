@@ -1,8 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
+import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 
+import Layout from '../components/Layout';
 import Subhead from '../components/Subhead';
 import Gallery from '../components/Gallery';
 
@@ -57,7 +58,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext;
 
     return (
-      <div>
+      <Layout>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h2>{post.frontmatter.title}</h2>
         <p>
@@ -83,7 +84,7 @@ class BlogPostTemplate extends React.Component {
             </Link>
           </p>
         )}
-      </div>
+      </Layout>
     );
   }
 }

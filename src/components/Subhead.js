@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 export default class Subhead extends React.Component {
   getCagematch(frontmatter) {

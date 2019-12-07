@@ -2,10 +2,21 @@ import '../styles/normalize.css';
 import '../styles/loud-places.css';
 
 import React from 'react';
-import Link from 'gatsby-link';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import capitalize from '../utils/capitalize';
 
-class Template extends React.Component {
+const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        navCategories
+      }
+    }
+  }
+`;
+
+class Layout extends React.Component {
   render() {
     const { location, children } = this.props;
     const { title, navCategories } = this.props.data.site.siteMetadata;
@@ -38,22 +49,18 @@ class Template extends React.Component {
       <div className="root">
         <div className="head-nav">{header}</div>
         <div className="right-pane">
-          <div className="content">{children()}</div>
+          <div className="content">{children}</div>
         </div>
       </div>
     );
   }
 }
 
-export default Template;
+const WrappedLayout = (props) => (
+  <StaticQuery
+    query={query}
+    render={(data) => <Layout data={data} {...props} />}
+  />
+);
 
-export const pageQuery = graphql`
-  query LayoutQuery {
-    site {
-      siteMetadata {
-        title
-        navCategories
-      }
-    }
-  }
-`;
+export default WrappedLayout;

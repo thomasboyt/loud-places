@@ -1,25 +1,27 @@
-import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import React from 'react';
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
 
-import PostList from '../components/PostList'
+import PostList from '../components/PostList';
+import Layout from '../components/Layout';
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
-      <div>
+      <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
 
         <PostList posts={posts} />
-      </div>
-    )
+      </Layout>
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -32,4 +34,4 @@ export const pageQuery = graphql`
       ...PostListMarkdownRemarkConnection
     }
   }
-`
+`;

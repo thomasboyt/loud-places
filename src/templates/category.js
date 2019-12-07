@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
+import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import capitalize from '../utils/capitalize';
 
@@ -13,11 +14,11 @@ export default class Category extends React.Component {
     const category = capitalize(get(this, 'props.pathContext.category'));
 
     return (
-      <div>
+      <Layout>
         <Helmet title={`${category} | ${siteTitle}`} />
         <h1>{category}</h1>
         <PostList posts={posts} />
-      </div>
+      </Layout>
     );
   }
 }

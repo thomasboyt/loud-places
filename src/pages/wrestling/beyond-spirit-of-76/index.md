@@ -1,7 +1,7 @@
 ---
 title: "Beyond Wrestling Spirit of '76"
 
-date: 2018-01-27 15:00:00
+date: 2018-01-27T15:00:00
 location: Wrestle Factory, Philadelphia, PA
 cagematch: https://www.cagematch.net/?id=1&nr=192390
 

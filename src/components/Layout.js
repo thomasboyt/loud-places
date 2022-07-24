@@ -18,7 +18,7 @@ const query = graphql`
 
 class Layout extends React.Component {
   render() {
-    const { location, children } = this.props;
+    const { children } = this.props;
     const { title, navCategories } = this.props.data.site.siteMetadata;
 
     const navItems = navCategories.map((category) => {

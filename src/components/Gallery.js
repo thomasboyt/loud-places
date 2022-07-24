@@ -32,7 +32,7 @@ const Videos = ({ videos }) => {
   const videoJsx = videos.map((video) => {
     const src = video;
     return (
-      <div className="google-video-container">
+      <div className="google-video-container" key={src}>
         <iframe
           allowFullScreen
           className="google-video"

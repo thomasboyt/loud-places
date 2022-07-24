@@ -1,19 +1,20 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es6": true,
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  plugins: ['react'],
+  env: {
+    es6: true,
+    browser: true,
+    node: true,
   },
-  "plugins": [
-    "react",
-  ],
-  "globals": {
-    "graphql": false,
-  },
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true,
+  settings: {
+    react: {
+      version: 'detect',
     },
-  }
-}
+  },
+  parserOptions: {
+    sourceType: 'module',
+  },
+  rules: {
+    'react/prop-types': 'off',
+  },
+};

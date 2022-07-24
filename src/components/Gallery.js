@@ -8,7 +8,7 @@ const Photos = ({ photos }) => {
   }
 
   const photoJsx = photos.map((photo) => {
-    const src = photo.src.childImageSharp.sizes.src;
+    const src = photo.src.childImageSharp.fluid.src;
     return (
       <a href={src} key={src}>
         <img src={src} />
@@ -72,7 +72,7 @@ export const markdownFrontmatterFragment = graphql`
       photos {
         src {
           childImageSharp {
-            sizes(maxWidth: 1000) {
+            fluid(maxWidth: 1000) {
               src
             }
           }

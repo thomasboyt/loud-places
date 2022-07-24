@@ -30,13 +30,11 @@ module.exports = {
             },
           },
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
   ],
 };

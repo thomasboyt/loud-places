@@ -55,7 +55,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    const { next } = this.props.pathContext;
+    const { next } = this.props.pageContext;
 
     return (
       <Layout>
